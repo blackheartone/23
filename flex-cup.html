@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局实现圣杯布局</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .content{
+            flex-grow: 1;
+        }
+        .header{
+            width:100px;
+            order: -1;
+        }
+        .footer {
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+                <div class="content">内容</div>
+                <div class="header">头部</div>
+                <div class="footer">尾部</div>
+        </div>
+</body>
+</html>
